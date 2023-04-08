@@ -513,7 +513,9 @@ footer li {
     }
 
     input {
-        width: auto;
+        width: 100%;
+        max-width: 247px;
+        margin-right: -10px;
     }
 
     .button-1 {
@@ -523,9 +525,6 @@ footer li {
     .button-2 {
         visibility: visible;
         border-radius: 15px;
-        position: absolute;
-        left: 305px;
-        
     }
 
     .fa-magnifying-glass {
