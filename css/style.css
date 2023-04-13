@@ -76,8 +76,12 @@ nav ul {
 
 header li a:hover, header li a:focus {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color);
-    padding-top: 13px;
+    border-color: var(--main-color);
+}
+
+header li a {
+    border-top: 2px solid transparent;
+    padding-top: 14px;
 }
 
 .logo {
@@ -166,6 +170,7 @@ header h2 {
     gap: 10px;
     list-style-type: none;
     margin: 0;
+    padding-left: 15px;
 }
 
 .filtres li {
@@ -257,13 +262,13 @@ header h2 {
 }
 
 .hebergements .card-content {
-    margin-left: 15px;
-    margin-top: 4px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .hebergements .card-title {
     margin-top: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
 }
 
 .hebergements .card-subtitle{
@@ -277,6 +282,11 @@ header h2 {
     font-weight: 700;
     font-size: 18px;
     margin: 1px;
+}
+
+.hebergements .card-rating {
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
 /****** Populaires ***********/
@@ -468,10 +478,16 @@ footer li {
     }
 
     h1 {
-        margin: auto;
+        margin: 0;
     }
 
-    header h1, header p, form, section {
+    header h1, header p, form, header section {
+        padding-left: 5.8%;
+        padding-right: 5.8%;
+        
+    }
+
+    section {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -494,24 +510,26 @@ footer li {
 
     header li a {
         display: block;
-        padding-bottom: 15px;
+        border-top: none;
+        padding: 0 0 15px 0;
         border-bottom: 2px solid var(--main-bg-color);
     }
 
     header li a:hover {
-        border-top: none;
-        border-bottom: 2px solid var(--main-color);
-        padding-top: 0;
-        padding-bottom: 15px;
+        border-color: var(--main-color);
     }
 
     header nav li {
        width: 50%;
     }
 
+    form {
+        justify-content: center;
+    }
+
     input {
         width: 100%;
-        max-width: 247px;
+        max-width: 288px;
         margin-right: -10px;
     }
 
@@ -522,10 +540,13 @@ footer li {
     .button-2 {
         visibility: visible;
         border-radius: 15px;
+        padding: 0;
     }
 
     .fa-magnifying-glass {
         color: white;
+        font-size: 17px;
+        padding: 16px;
     }
 
     header section {
@@ -534,11 +555,14 @@ footer li {
 
     .filtres {
         gap: 20px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .filtres li {
         font-size: 14px;
-        width: 120px;
+        min-width: 120px;
+        padding: 15px 0 15px 19px;
     }
 
     .hebergements-and-populaires {
@@ -631,6 +655,10 @@ footer li {
 
     footer h3 {
         margin: 0;
+    }
+
+    footer li {
+        margin-left: 0;
     }
 
     footer section {
