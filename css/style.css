@@ -100,10 +100,6 @@ h1 + p {
     font-size: 16px;
 }
 
-.icone, input, button {
-    border: 1px solid var(--main-bg-color);
-}
-
 form {
     display: flex;
     height: 49px;
@@ -133,6 +129,7 @@ input {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    border: 1px solid var(--main-bg-color);
     border-right: none;
     border-left: none;
 }
@@ -143,7 +140,6 @@ button {
     font-weight: 700;
     font-size: 18px;
     border: var(--main-color);
-    border-left: none;
     border-radius: 0 15px 15px 0;
     padding: 14px 16px;
 }
